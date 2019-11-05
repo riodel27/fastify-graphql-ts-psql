@@ -1,0 +1,22 @@
+{
+  "name": "actis_garden_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.10.0",
+    "fastify-autoload": "^1.0.0",
+    "pg": "^7.12.1",
+    "typeorm": "^0.2.20",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

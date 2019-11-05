@@ -1,0 +1,10 @@
+- Typescript
+- TypeGraphQL
+- Apollo Server
+- Fastify
+- Postgres
+- TypeORM / Typegoose
+- Dataloader
+Frontend
+- Apollo Client
+- GraphQL Code Generator
