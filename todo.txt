@@ -1,3 +1,5 @@
-setup fastify with typescript
-fastify with graphql
-fastify folder structure with typescript,graphql and postgresql 
+1. setup tslint
+2. nodemon
+3. setup error handling
+4. setup logger
+5. server side rendering reactjs and apollo client.

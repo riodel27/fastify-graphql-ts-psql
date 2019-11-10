@@ -1,9 +1,9 @@
+Server
 - Typescript
-- TypeGraphQL
 - Apollo Server
 - Fastify
 - Postgres
-- TypeORM / Typegoose
+- TypeORM 
 - Dataloader
 Frontend
 - Apollo Client
