@@ -1,5 +1,3 @@
-1. setup docker with postgresql
-2. setup fastify with typescript
-3. fastify with graphql
-4. fastify folder structure with typescript,graphql and postgresql
-5. 
+setup fastify with typescript
+fastify with graphql
+fastify folder structure with typescript,graphql and postgresql 

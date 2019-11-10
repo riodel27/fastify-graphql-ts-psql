@@ -39,4 +39,5 @@ const start = async () => {
 		process.exit(1)
 	}
 }
+
 start()
