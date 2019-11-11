@@ -1,6 +1,7 @@
-import { gql } from 'apollo-server-fastify'
+/* eslint-disable no-tabs */
+import { gql } from 'apollo-server-fastify';
 
-export const typeDefs = gql`
+const typeDefs = gql`
   type User {
     id: ID!
     name: String!
@@ -9,3 +10,5 @@ export const typeDefs = gql`
 		users: [User]
   }
 `;
+
+export default typeDefs;

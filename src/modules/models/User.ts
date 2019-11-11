@@ -1,9 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 export default class Users {
 	@PrimaryGeneratedColumn() // typeorm
 	id: number; // graphql
 
-	@Column() 
+	@Column()
 	name: string
 }
