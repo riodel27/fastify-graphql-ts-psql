@@ -7,7 +7,8 @@ const typeDefs = gql`
     name: String!
   }
   type Query {
-		users: [User]
+		users: [User],
+		authenticationError: String
   }
 `;
 

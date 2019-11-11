@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import fastify from 'fastify';
 import { Server, IncomingMessage, ServerResponse } from 'http';
 import { ApolloServer } from 'apollo-server-fastify';
@@ -20,6 +21,7 @@ const start = async () => {
     });
     app.register(server.createHandler());
     await app.listen(3000, '0.0.0.0');
+    console.log('Server listening at http://localhost/:3000/graphql');
   } catch (error) {
     console.log('error: ', error);
     app.log.error(error);

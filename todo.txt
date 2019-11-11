@@ -1,3 +1,4 @@
-3. setup error handling
-4. setup logger
-5. server side rendering reactjs and apollo client.
+1. error handling
+2. logger
+...
+100. (ssr) server side rendering reactjs and apollo client.

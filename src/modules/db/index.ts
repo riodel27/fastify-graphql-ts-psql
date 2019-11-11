@@ -12,6 +12,5 @@ export default fp(async (fastify, opts: {}, next) => {
     database: 'fastify_db',
     entities: [Users],
   });
-  console.log('successfully connected');
   next();
 });

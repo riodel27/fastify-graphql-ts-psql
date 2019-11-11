@@ -1,6 +1,9 @@
 /* eslint-disable consistent-return */
-import UserRepository from '../../modules/repository/User';
+import { AuthenticationError, ApolloError } from 'apollo-server-fastify';
+
 import User from '../../modules/models/User';
+
+import UserRepository from '../../modules/repository/User';
 
 export default {
   Query: {
@@ -8,8 +11,13 @@ export default {
       try {
         return await UserRepository.Find({});
       } catch (error) {
-        console.log('error: ', error);
+        // 1. for debugging error? -> where to capture and store the real error like maybe database error.
+        // 2. where to format the error for the client(reactjs)
+        throw new ApolloError('Internal server error');
       }
+    },
+    async authenticationError() {
+      throw new AuthenticationError('must authenticate');
     },
   },
 };

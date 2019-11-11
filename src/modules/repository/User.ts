@@ -1,5 +1,6 @@
 /* eslint-disable consistent-return */
 import { getRepository } from 'typeorm';
+
 import UserEntity from '../models/User';
 
 export default {
@@ -9,7 +10,7 @@ export default {
       const user = await User.findOne(query);
       return user;
     } catch (error) {
-      console.log('error: ', error);
+      throw Error(error);
     }
   },
   async Find(query: any): Promise<UserEntity[] | undefined> {
@@ -18,7 +19,7 @@ export default {
       const users = await User.find(query);
       return users;
     } catch (error) {
-      console.log('error: ', error);
+      throw Error(error);
     }
   },
 };
