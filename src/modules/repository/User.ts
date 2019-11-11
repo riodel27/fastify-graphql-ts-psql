@@ -15,7 +15,7 @@ export default {
   async Find(query: any): Promise<UserEntity[] | undefined> {
     try {
       const User = getRepository(UserEntity);
-      const users = await User.find();
+      const users = await User.find(query);
       return users;
     } catch (error) {
       console.log('error: ', error);
